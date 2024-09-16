@@ -1,9 +1,8 @@
 import { checkIfUserExists ,createPassword} from "./utils.js";
 import jwt from "jsonwebtoken";
-import { configDotenv } from "dotenv";
 import bcrypt from 'bcrypt';
 
-configDotenv();
+
 
 export const login = async (req, res) => {
   const { email, password } = req.body;

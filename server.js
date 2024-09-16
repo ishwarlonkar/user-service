@@ -2,6 +2,10 @@ import express from 'express';
 import { router } from './Routes/userRoutes';
 import { database } from './Model/index.js';
 import { verifyToken } from './middleware/verifyToken.js';
+// import { configDotenv } from "dotenv";
+
+configDotenv();
+
 
 const app = express();
 const port = 3000;

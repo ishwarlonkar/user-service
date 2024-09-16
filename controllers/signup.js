@@ -1,5 +1,4 @@
 import { database } from "../Model/index.js";
-import bcrypt from "bcrypt";
 import { checkIfUserExists, createPassword } from "./utils.js";
 
 export const signup = async (req, res) => {
